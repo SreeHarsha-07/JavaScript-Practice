@@ -1,3 +1,5 @@
+// DAY 1
+
 // Activity 1 -> https://www.crio.do/learn/PSDS/ME_FE2_ES6_PRACTICE/ME_FE2_ES6_PRACTICE_MODULE_ARRAYSIMPLEES6/
 
 function removeListedValues(arr, without) {
@@ -76,75 +78,76 @@ function isPrime(n) {
   return true;
 }
 
+// DAY 2
+
 // Activity 1 -> https://www.crio.do/learn/PSDS/ME_FE2_ES6_PRACTICE/ME_FE2_ES6_PRACTICE_MODULE_TRYCATCHES6/
 
-// function errorHandler(x) {
+function errorHandler(x) {
 
-//     try {
-//         const val = getX(x);
-//         return val;
-//     } catch(error) {
+    try {
+        const val = getX(x);
+        return val;
+    } catch(error) {
 
-//         // show the beautiful UI
-//         return error;
-//     }
+        // show the beautiful UI
+        return error;
+    }
 
-// }
+}
 
-// function getX(x) {
-//   if (x == 5) {
-//     throw new Error("Error Occured");
-//   }
-//   return x;
-// }
+function getX(x) {
+  if (x == 5) {
+    throw new Error("Error Occured");
+  }
+  return x;
+}
 
-// module.exports = errorHandler;
+module.exports = errorHandler;
 
 // Activity 2 -> https://www.crio.do/learn/PSDS/ME_FE2_ES6_PRACTICE/ME_FE2_ES6_PRACTICE_MODULE_THROWES6/
 
-// function isAlphabet(X) {
-//   try {
-//     const result = checkAlphabet(X);
+function isAlphabet(X) {
+  try {
+    const result = checkAlphabet(X);
 
-//     if (result) {
-//       return "Yes";
-//     } else {
-//       const errorObj = new Error("Not Alphabet");
-//       // return errorObj; // wrong
+    if (result) {
+      return "Yes";
+    } else {
+      const errorObj = new Error("Not Alphabet");
+      // return errorObj; // wrong
 
-//       throw errorObj;
-//     }
-//   } catch (error) {
-//     // handle
-//   }
+      throw errorObj;
+    }
+  } catch (error) {
+    // handle
+  }
+}
+
+// function sum(a,b) {
+//       try {
+//             return a +b;
+
+//       } catch (error) {
+//             throw new Error("Invalid character ")
+//       }
 // }
 
-// // function sum(a,b) {
-// //       try {
-// //             return a +b;
+function checkAlphabet(X) {
+  if (x == "a") {
+    throw Error();
+  }
 
-// //       } catch (error) {
-// //             throw new Error("Invalid character ")
-// //       }
-// // }
+  let n = X.charCodeAt(0);
 
-// function checkAlphabet(X) {
-//   if (x == "a") {
-//     throw Error();
-//   }
+  let strStartsWithALetter = (n >= 65 && n < 91) || (n >= 97 && n < 123);
 
-//   let n = X.charCodeAt(0);
+  if (strStartsWithALetter) {
+    return true;
+  } else {
+    return false;
+  }
+}
 
-//   let strStartsWithALetter = (n >= 65 && n < 91) || (n >= 97 && n < 123);
-
-//   if (strStartsWithALetter) {
-//     return true;
-//   } else {
-//     return false;
-//   }
-// }
-
-// module.exports = isAlphabet;
 
 // Activity 3 -> https://www.crio.do/learn/PSDS/ME_FE2_ES6_PRACTICE/ME_FE2_ES6_PRACTICE_MODULE_FOREACHES6/
 
